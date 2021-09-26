@@ -177,7 +177,8 @@ body {
   height: 400px;
 }
 
-.banner-section__inner-btn {
+.banner-section__slider-btn,
+.products-slider__slider-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -189,11 +190,11 @@ body {
   cursor: pointer;
 }
 
-.banner-section__inner-btnnext {
+.banner-section__slider-btnnext {
   right: 20px;
 }
 
-.banner-section__inner-btnprev {
+.banner-section__slider-btnprev {
   left: 20px;
 }
 
@@ -204,12 +205,10 @@ body {
   right: 0;
   text-align: center;
 }
-
 .slick-dots li {
   display: inline-block;
   padding: 0 5px;
 }
-
 .slick-dots button {
   padding: 0;
   margin: 0;
@@ -220,9 +219,11 @@ body {
   border-radius: 50%;
   background-color: transparent;
 }
-
-.slick-active button {
+li.slick-active button {
   background-color: #fff;
+}
+.slick-slide img {
+  display: inline;
 }
 
 .sale-item {
@@ -376,54 +377,13 @@ body {
 .products__tab.tab-active {
   background-color: transparent;
   padding-bottom: 10px;
-  border-bottom: 2px solid var(--c-blue);
+  border-bottom: 3px solid var(--c-blue);
 }
-.products-slider__item {
-  display: flex;
-}
+
 .product-item__wrapper {
+  display: inline-flex !important;
   position: relative;
-  width: 250px;
-}
-.product-item {
-  width: 100%;
-  height: 342px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-  padding: 50px 20px 30px;
-  text-align: center;
-  transition: all 0.3s;
-}
-.product-item__hover-text {
-  padding: 15px 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  position: absolute;
-  top: 30%;
-  opacity: 0;
-  transition: all 0.3s;
-}
-.product-item:hover {
-  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-  color: var(--c-blue);
-}
-.product-item:hover .product-item__hover-text {
-  opacity: 1;
-  color: #2f2035;
-}
-.product-item--sale::before {
-  content: "sale";
-  text-transform: uppercase;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 8px 15px;
-  background: var(--c-blue);
-  color: #fff;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.07em;
+  margin-right: 20px;
 }
 .product-item__favorite {
   position: absolute;
@@ -453,18 +413,56 @@ body {
   position: absolute;
   width: 40px;
   height: 30px;
-  color: #fff;
   background: var(--c-blue);
   border-radius: 10px 0 0 0;
   border: none;
-  bottom: -342px;
-  right: 1px;
+  bottom: 0;
+  right: 0;
   z-index: 5;
   cursor: pointer;
 }
+.product-item--sale::before {
+  content: "sale";
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 15px;
+  background: var(--c-blue);
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.07em;
+}
+.product-item {
+  width: 250px;
+  height: 345px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 50px 20px 30px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.product-item:hover {
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  color: var(--c-blue);
+}
+.product-item__hover-text {
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  position: absolute;
+  top: 30%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.product-item:hover .product-item__hover-text {
+  opacity: 1;
+  color: #2f2035;
+}
 .product-item__title {
-  height: 80px;
-  padding: 14px 0 25px;
+  padding: 10px 0 20px;
   font-size: 18px;
   line-height: 21px;
   font-weight: normal;
@@ -487,7 +485,7 @@ body {
   line-height: 19px;
   position: absolute;
   color: var(--c-blue);
-  top: 305px;
+  bottom: 25px;
   left: 0;
   right: 0;
   text-align: center;
@@ -510,6 +508,25 @@ body {
 }
 .product-item__wrapper.product-item__not-available .product-item__price {
   display: none;
+}
+
+.products-slider__slider-btnnext {
+  right: -20px;
+}
+.products-slider__slider-btnprev {
+  left: -40px;
+}
+
+.products__more {
+  text-align: center;
+}
+.products__more-link {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: #f0f0f4;
+  padding: 15px 40px;
 }
 
 @media screen and (min-width: 1200px) {
