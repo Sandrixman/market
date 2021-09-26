@@ -9,8 +9,10 @@ $(function () {
     $('.tab').on('click', function (e) {
         e.preventDefault();
 
-        $('.tab').removeClass('tab-active');
-        $('.tab-content').removeClass('tab-content-active');
+        // .siblings() - звернення до сусідів
+        $($(this).siblings()).removeClass('tab-active');
+        // .parent().siblings().find('div') - піднімається до батьківського блоку, далі у сусідів шукає дівки
+        $($(this).parent().siblings().find('div')).removeClass('tab-content-active');
 
         $(this).addClass('tab-active');
         $($(this).attr('href')).addClass('tab-content-active');

@@ -519,6 +519,7 @@ li.slick-active button {
 
 .products__more {
   text-align: center;
+  margin-top: 35px;
 }
 .products__more-link {
   font-size: 15px;
@@ -527,6 +528,79 @@ li.slick-active button {
   text-transform: uppercase;
   background: #f0f0f4;
   padding: 15px 40px;
+}
+
+.banner__link img {
+  width: 100%;
+  height: 200px;
+}
+
+.footer {
+  background: #f0f0f4;
+}
+.footer__top {
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__top-newslatter {
+  width: 290px;
+}
+.footer__top-title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+}
+.footer__top-form {
+  width: 295px;
+  margin-top: 35px;
+  display: flex;
+}
+.footer-input {
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer-input ::placeholder {
+  color: #c4c4c4;
+}
+.footer-btn {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  background: var(--c-blue);
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+.footer-list {
+  font-size: 14px;
+  line-height: 24px;
+}
+.network-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.network-list__item {
+  margin-right: 30px;
+}
+.network-list__item img {
+  width: 25px;
+  height: 25px;
+}
+.footer__bottom {
+  padding: 45px 0 25px;
+  display: flex;
+  justify-content: center;
+}
+.footer__bottom-link {
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0 40px;
+  color: #48494d;
 }
 
 @media screen and (min-width: 1200px) {
