@@ -603,6 +603,34 @@ li.slick-active button {
   color: #48494d;
 }
 
+/* Сторінка каталога */
+.breadcrumbs {
+  margin-bottom: 40px;
+}
+.breadrumps__list-item {
+  display: inline-block;
+  padding-right: 15px;
+  margin-right: 10px;
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  color: #c4c4c4;
+}
+.breadrumps__list-item::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  bottom: 0px;
+  width: 14px;
+  height: 15px;
+  color: #c4c4c4;
+  background-size: 20px;
+  background-image: url("../images/grey-right-arrow.svg");
+}
+.breadrumps__list-item:last-child::after {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
   .header {
     font-size: 26px;
