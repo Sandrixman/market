@@ -31,4 +31,20 @@ $(function () {
         nextArrow: `<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="/images/right-arrow.svg" alt="" ></button> `
     });
 
+    // Плагін стилізації бокового фільтру - jquery.formstyler
+    $('.filter-style').styler();
+
+    // Плагін ховає/показує длок під батьківським блоком
+    $('.aside-filter__item-title').on('click', function () {
+        $(this).toggleClass('filter__item-drop');
+        // .slideToggle() - приховує блок
+        $(this).next().slideToggle();
+    });
+
+    // Плагін шкала ціни
+    $(".js-range-slider").ionRangeSlider({
+        skin: "big",
+        postfix: " грн"
+    });
+
 });

@@ -623,12 +623,206 @@ li.slick-active button {
   bottom: 0px;
   width: 14px;
   height: 15px;
-  color: #c4c4c4;
   background-size: 20px;
   background-image: url("../images/grey-right-arrow.svg");
+  opacity: 0.5;
 }
 .breadrumps__list-item:last-child::after {
   display: none;
+}
+
+.catalog {
+  margin-bottom: 100px;
+}
+.catalog__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.catalof__filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.catalog__filter-items button {
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.7;
+  background: #f0f0f4;
+  border-radius: 3px;
+  border: none;
+  padding: 5px 22px;
+  cursor: pointer;
+}
+.catalog__filter-items button + button {
+  margin-left: 8px;
+}
+.catalog__filter-btn button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+}
+.catalog__inner {
+  display: flex;
+}
+.catalog__inner-aside {
+  min-width: 280px;
+  margin-right: 10px;
+}
+.catalog__inner-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog__inner-list .product-item__wrapper {
+  margin-bottom: 30px;
+}
+.pagination {
+  width: 100%;
+  margin-top: 70px;
+}
+.pagination__list {
+  display: flex;
+  justify-content: center;
+}
+.pagination__list-item {
+  padding: 6px 12px;
+  margin: 0 5px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c4c4c4;
+}
+.pagination__list-item.active {
+  border: 2px solid var(--c-blue);
+  color: var(--c-blue);
+}
+
+.aside-filter__tabs {
+  display: flex;
+}
+.aside-filter__tab {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  letter-spacing: 0.09em;
+  color: #c4c4c4;
+  width: 50%;
+}
+.aside-filter__tab.tab-active {
+  font-weight: bold;
+  color: #2f3035;
+  background: transparent;
+}
+.aside-filter__tab.tab-active span {
+  border-bottom: 2px solid var(--c-blue);
+  padding-bottom: 7px;
+}
+.aside-filter__item-drop {
+  margin: 40px 0;
+}
+.aside-filter__item-title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  padding-left: 26px;
+  position: relative;
+  cursor: pointer;
+}
+.aside-filter__item-title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/up-arrow.svg");
+  left: 0;
+  bottom: 2px;
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  opacity: 0.5;
+  transform: rotate(0deg);
+}
+.filter__item-drop::before {
+  transform: rotate(180deg);
+}
+.aside-filter__content {
+  display: flex;
+  margin-top: 15px;
+}
+.aside-filter__content-box {
+  width: 50%;
+}
+.aside-filter__content-box label {
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+}
+.jq-checkbox,
+.jq-radio {
+  background: transparent;
+  vertical-align: -2px;
+  box-shadow: none;
+  border-radius: 3px;
+}
+.jq-checkbox.checked,
+.jq-radio.checked {
+  background: var(--c-blue);
+}
+.jq-checkbox.checked .jq-checkbox__div {
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.jq-radio.checked .jq-radio__div {
+  background: transparent;
+  box-shadow: none;
+}
+.irs--flat.irs-with-grid {
+  width: 100%;
+}
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  background-color: var(--c-blue);
+}
+.irs--flat .irs-bar {
+  background-color: var(--c-blue);
+}
+.aside-filter__content-price {
+  margin-top: 15px;
+}
+.irs--big .irs-handle {
+  top: 29px;
+  width: 11px;
+  height: 20px;
+}
+.irs--big .irs-bar,
+.irs--big .irs-from,
+.irs--big .irs-to,
+.irs--big .irs-single,
+.irs--big .irs-grid-pol {
+  background: var(--c-blue);
+}
+.irs--big .irs-grid-text {
+  color: var(--c-blue);
+}
+.irs--big .irs-min,
+.irs--big .irs-max {
+  display: none;
+}
+.aside-filter__item-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  border-bottom: 2px solid #c4c4c4;
+}
+.filter__item-list {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 1200px) {

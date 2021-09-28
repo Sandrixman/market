@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -106,6 +110,332 @@
     </div>
   </div>
 
+  <!-- Каталог -->
+  <section class="catalog">
+    <div class="container">
+      <h2 class="catalog__title">
+        Детские зимние куртки
+      </h2>
+      <div class="catalof__filter">
+        <div class="catalog__filter-items">
+          <button>Биопух</button>
+          <button>до 3000</button>
+          <button>X-Woyz</button>
+        </div>
+        <div class="catalog__filter-btn">
+          <select class="filter-style">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          <button class="catalog__filter-btngrid">
+            <svg width="20" height="20" viewBox="0 0 52 52" data-name="Layer 1" id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M14,16H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2V14A2,2,0,0,1,14,16ZM4,12h8V4H4Z" />
+              <path d="M14,34H2a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H14a2,2,0,0,1,2,2V32A2,2,0,0,1,14,34ZM4,30h8V22H4Z" />
+              <path d="M14,52H2a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H14a2,2,0,0,1,2,2V50A2,2,0,0,1,14,52ZM4,48h8V40H4Z" />
+              <path d="M32,16H20a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V14A2,2,0,0,1,32,16ZM22,12h8V4H22Z" />
+              <path d="M32,34H20a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V32A2,2,0,0,1,32,34ZM22,30h8V22H22Z" />
+              <path d="M32,52H20a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V50A2,2,0,0,1,32,52ZM22,48h8V40H22Z" />
+              <path d="M50,16H38a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V14A2,2,0,0,1,50,16ZM40,12h8V4H40Z" />
+              <path d="M50,34H38a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V32A2,2,0,0,1,50,34ZM40,30h8V22H40Z" />
+              <path d="M50,52H38a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V50A2,2,0,0,1,50,52ZM40,48h8V40H40Z" />
+            </svg>
+          </button>
+          <button class="catalog__filter-btnline">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+              <g>
+                <path d="M109.773,105.325H7.712V0h102.061V105.325z M28.346,84.691h60.793V20.634H28.346V84.691z" />
+                <rect x="165.277" y="38.522" width="317.011" height="20.634" />
+                <path
+                  d="M109.773,297.662H7.712V192.333h102.061V297.662z M28.346,277.028h60.793v-64.061H28.346V277.028z" />
+                <rect x="165.277" y="230.859" width="317.011" height="20.634" />
+                <path d="M109.773,490H7.712V384.67h102.061V490z M28.346,469.366h60.793v-64.063H28.346V469.366z" />
+                <rect x="165.277" y="423.197" width="317.011" height="20.634" />
+              </g>
+            </svg>
+
+          </button>
+        </div>
+      </div>
+      <div class="catalog__inner">
+        <aside class="catalog__inner-aside aside-filter">
+          <div class="tabs-wrapper">
+            <div class="tabs aside-filter__tabs">
+              <a class="tab aside-filter__tab tab-active" href="#"><span>Параметры</span> </a>
+              <a class="tab aside-filter__tab" href="#"><span>По модели</span> </a>
+            </div>
+            <div class="tabs-container">
+              <div class="tab-content aside-filter__tab-content tab-content-active">
+                <form action="" class="aside-filter__form">
+                  <ul class="aside-filter__list">
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title filter__item-drop">Наличие</p>
+                      <div class="aside-filter__content">
+                        <div class="aside-filter__content-box">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            В наличии
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-box">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            Под заказ
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title filter__item-drop">Новинки</p>
+                      <div class="aside-filter__content">
+                        <div class="aside-filter__content-box">
+                          <label>
+                            <input name="radio" type="radio" class="filter-style">
+                            Все
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-box">
+                          <label>
+                            <input name="radio" type="radio" class="filter-style">
+                            Новинки
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-box">
+                          <label>
+                            <input name="radio" type="radio" class="filter-style">
+                            Акции
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title filter__item-drop">Цена</p>
+                      <div class="aside-filter__content-price">
+                        <input type="text" class="js-range-slider" name="my_range" value="" data-type="double"
+                          data-min="0" data-max="5000" data-from="500" data-to="2000" data-grid="true" />
+                      </div>
+                    </li>
+                    <div class="aside-filter__item-list">
+                      <p class="filter__item-list">
+                        Утелитель
+                      </p>
+                      <select class="filter-style">
+                        <option value="">Биопух(синтепух)</option>
+                        <option value="">Тинсулейт</option>
+                        <option value="">Холофайбер</option>
+                        <option value="">Силикон</option>
+                        <option value="">Синтипон</option>
+                      </select>
+                    </div>
+                  </ul>
+                </form>
+              </div>
+              <div class="tab-content aside-filter__tab-content">2
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="catalog__inner-list">
+          <div class="product-item__wrapper">
+            <button class="product-item__favorite"></button>
+            <button class="product-item__cart">
+              <img src="./images/cart-white.svg" alt="cart">
+            </button>
+            <a class="product-item" href="#">
+              <p class="product-item__hover-text">
+                посмотреть товар
+              </p>
+              <img class="product-item__img" src="./images/content/item1.png" alt="">
+              <h4 class="product-item__title">
+                Зимняя куртка
+                <br>"TOP"
+              </h4>
+              <p class="product-item__price">2800 грн</p>
+              <p class="product-item__notify-text">нет в наличии</p>
+            </a>
+            <a class="product-item__notify-link" href="#">
+              <span>Сообщить о поступлении</span>
+            </a>
+          </div>
+          <div class="product-item__wrapper">
+            <button class="product-item__favorite"></button>
+            <button class="product-item__cart">
+              <img src="./images/cart-white.svg" alt="cart">
+            </button>
+            <a class="product-item" href="#">
+              <p class="product-item__hover-text">
+                посмотреть товар
+              </p>
+              <img class="product-item__img" src="./images/content/item1.png" alt="">
+              <h4 class="product-item__title">
+                Зимняя куртка
+                <br>"TOP"
+              </h4>
+              <p class="product-item__price">2800 грн</p>
+              <p class="product-item__notify-text">нет в наличии</p>
+            </a>
+            <a class="product-item__notify-link" href="#">
+              <span>Сообщить о поступлении</span>
+            </a>
+          </div>
+          <div class="product-item__wrapper">
+            <button class="product-item__favorite"></button>
+            <button class="product-item__cart">
+              <img src="./images/cart-white.svg" alt="">
+            </button>
+            <a class="product-item product-item--sale" href="#">
+              <p class="product-item__hover-text">
+                посмотреть товар
+              </p>
+              <img class="product-item__img" src="./images/content/item1.png" alt="">
+              <h4 class="product-item__title">
+                Зимняя куртка
+                <br>"Бест"
+              </h4>
+              <p class="product-item__price">1500 грн</p>
+              <p class="product-item__notify-text">нет в наличии</p>
+            </a>
+            <a class="product-item__notify-link" href="#">
+              <span>Сообщить о поступлении</span>
+            </a>
+          </div>
+          <div class="product-item__wrapper product-item__not-available">
+            <button class="product-item__favorite"></button>
+            <button class="product-item__cart">
+              <img src="./images/cart-white.svg" alt="">
+            </button>
+            <a class="product-item" href="#">
+              <p class="product-item__hover-text">
+                посмотреть товар
+              </p>
+              <img class="product-item__img" src="./images/content/item1.png" alt="">
+              <h4 class="product-item__title">
+                Зимняя куртка
+                <br>"Tira"
+              </h4>
+              <p class="product-item__price">1500 грн</p>
+              <p class="product-item__notify-text">нет в наличии</p>
+            </a>
+            <a class="product-item__notify-link" href="#">
+              <span>Сообщить о поступлении</span>
+            </a>
+          </div>
+          <div class="product-item__wrapper">
+            <button class="product-item__favorite"></button>
+            <button class="product-item__cart">
+              <img src="./images/cart-white.svg" alt="cart">
+            </button>
+            <a class="product-item" href="#">
+              <p class="product-item__hover-text">
+                посмотреть товар
+              </p>
+              <img class="product-item__img" src="./images/content/item1.png" alt="">
+              <h4 class="product-item__title">
+                Зимняя куртка
+                <br>"TOP"
+              </h4>
+              <p class="product-item__price">2800 грн</p>
+              <p class="product-item__notify-text">нет в наличии</p>
+            </a>
+            <a class="product-item__notify-link" href="#">
+              <span>Сообщить о поступлении</span>
+            </a>
+          </div>
+          <div class="product-item__wrapper">
+            <button class="product-item__favorite"></button>
+            <button class="product-item__cart">
+              <img src="./images/cart-white.svg" alt="cart">
+            </button>
+            <a class="product-item" href="#">
+              <p class="product-item__hover-text">
+                посмотреть товар
+              </p>
+              <img class="product-item__img" src="./images/content/item1.png" alt="">
+              <h4 class="product-item__title">
+                Зимняя куртка
+                <br>"TOP"
+              </h4>
+              <p class="product-item__price">2800 грн</p>
+              <p class="product-item__notify-text">нет в наличии</p>
+            </a>
+            <a class="product-item__notify-link" href="#">
+              <span>Сообщить о поступлении</span>
+            </a>
+          </div>
+          <div class="product-item__wrapper">
+            <button class="product-item__favorite"></button>
+            <button class="product-item__cart">
+              <img src="./images/cart-white.svg" alt="">
+            </button>
+            <a class="product-item product-item--sale" href="#">
+              <p class="product-item__hover-text">
+                посмотреть товар
+              </p>
+              <img class="product-item__img" src="./images/content/item1.png" alt="">
+              <h4 class="product-item__title">
+                Зимняя куртка
+                <br>"Бест"
+              </h4>
+              <p class="product-item__price">1500 грн</p>
+              <p class="product-item__notify-text">нет в наличии</p>
+            </a>
+            <a class="product-item__notify-link" href="#">
+              <span>Сообщить о поступлении</span>
+            </a>
+          </div>
+          <div class="product-item__wrapper product-item__not-available">
+            <button class="product-item__favorite"></button>
+            <button class="product-item__cart">
+              <img src="./images/cart-white.svg" alt="">
+            </button>
+            <a class="product-item" href="#">
+              <p class="product-item__hover-text">
+                посмотреть товар
+              </p>
+              <img class="product-item__img" src="./images/content/item1.png" alt="">
+              <h4 class="product-item__title">
+                Зимняя куртка
+                <br>"Tira"
+              </h4>
+              <p class="product-item__price">1500 грн</p>
+              <p class="product-item__notify-text">нет в наличии</p>
+            </a>
+            <a class="product-item__notify-link" href="#">
+              <span>Сообщить о поступлении</span>
+            </a>
+          </div>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__list-item active">
+                <a href="">1</a>
+              </li>
+              <li class="pagination__list-item">
+                <a href="">2</a>
+              </li>
+              <li class="pagination__list-item">
+                <a href="">3</a>
+              </li>
+              <li class="pagination__list-item">
+                <a href="">4</a>
+              </li>
+              <li class="pagination__list-item">
+                <a href="">5</a>
+              </li>
+              <li class="pagination__list-item pagination__list-item--dots">
+                <span>...</span>
+              </li>
+              <li class="pagination__list-item">
+                <a href="">11</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Футер -->
   <footer class="footer">
     <div class="container">
@@ -162,6 +492,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
