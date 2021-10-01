@@ -47,4 +47,22 @@ $(function () {
         postfix: " грн"
     });
 
+    // Відкривання додаткових елементів фільтру
+    // перемикач активності улюбленого товару
+    $('.filter-more').on('click', function () {
+        $('.more-content').toggleClass('visible')
+    });
+
+    // Перемикач вигляду карточок товару (grid|line)
+    $('.catalog__filter-btn-grid').on('click', function () {
+        $('.catalog__filter-btn-line').removeClass('active');
+        $(this).addClass('active');
+        $('.product-item__wrapper').removeClass('line');
+    });
+    $('.catalog__filter-btn-line').on('click', function () {
+        $('.catalog__filter-btn-grid').removeClass('active');
+        $(this).addClass('active');
+        $('.product-item__wrapper').addClass('line');
+    });
+
 });

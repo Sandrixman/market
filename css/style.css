@@ -10,7 +10,7 @@
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--txt-main);
 }
 
 ul,
@@ -151,12 +151,12 @@ body {
   right: 0;
   left: auto;
   height: 3px;
-  bottom: -3px;
+  bottom: 0;
   transition: all 0.5s;
   z-index: 5;
 }
 .menu-categories__link:hover {
-  color: black;
+  color: #f02424
 }
 .menu-categories__link:hover::before {
   width: 100%;
@@ -383,7 +383,12 @@ li.slick-active button {
 .product-item__wrapper {
   display: inline-flex !important;
   position: relative;
-  margin-right: 20px;
+  margin-left: 20px;
+  width: 30%;
+  transition: all 0.3s;
+}
+.product-item__wrapper.line {
+  width: 100%;
 }
 .product-item__favorite {
   position: absolute;
@@ -435,7 +440,7 @@ li.slick-active button {
   letter-spacing: 0.07em;
 }
 .product-item {
-  width: 250px;
+  width: 100%;
   height: 345px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
@@ -454,6 +459,8 @@ li.slick-active button {
   border-radius: 3px;
   position: absolute;
   top: 30%;
+  left: 12%;
+  width: 78%;
   opacity: 0;
   transition: all 0.3s;
 }
@@ -605,7 +612,7 @@ li.slick-active button {
 
 /* Сторінка каталога */
 .breadcrumbs {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .breadrumps__list-item {
   display: inline-block;
@@ -614,6 +621,8 @@ li.slick-active button {
   position: relative;
   font-size: 15px;
   line-height: 18px;
+}
+.breadrumps__list-item a {
   color: #c4c4c4;
 }
 .breadrumps__list-item::after {
@@ -658,25 +667,43 @@ li.slick-active button {
 .catalog__filter-items button + button {
   margin-left: 8px;
 }
-.catalog__filter-btn button {
+.catalog__filter-select {
+  display: flex;
+  align-items: center;
+}
+.catalog__filter-select .jq-selectbox {
+  width: auto;
+}
+.catalog__filter-select button {
   background: transparent;
   border: none;
   cursor: pointer;
   margin: 0;
   padding: 0;
   margin-left: 10px;
+  opacity: 0.3;
+}
+.select-item {
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid #cdcdcd;
+  margin-right: 20px;
+  padding: 5px 10px;
+}
+.select-item .jq-selectbox__trigger {
+  border-left: none;
+}
+.catalog__filter-btn-grid.active,
+.catalog__filter-btn-line.active {
+  opacity: 0.8;
 }
 .catalog__inner {
   display: flex;
 }
 .catalog__inner-aside {
   min-width: 280px;
+  max-width: 280px;
   margin-right: 10px;
-}
-.catalog__inner-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 .catalog__inner-list .product-item__wrapper {
   margin-bottom: 30px;
@@ -750,15 +777,32 @@ li.slick-active button {
 }
 .aside-filter__content {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.aside-filter__content-radio {
+  display: flex;
   margin-top: 15px;
 }
 .aside-filter__content-box {
   width: 50%;
+  margin-bottom: 10px;
 }
-.aside-filter__content-box label {
+.aside-filter__content-multybox {
+  width: 33%;
+  margin-bottom: 10px;
+}
+.aside-filter__content-box,
+.aside-filter__content-multybox label {
   font-size: 14px;
   line-height: 17px;
   cursor: pointer;
+}
+.more-content {
+  display: none;
+}
+.more-content.visible {
+  display: block;
 }
 .jq-checkbox,
 .jq-radio {
@@ -771,9 +815,49 @@ li.slick-active button {
 .jq-radio.checked {
   background: var(--c-blue);
 }
+.jq-checkbox.checked.white {
+  background: transparent;
+}
+.jq-checkbox.checked.black {
+  background: black;
+}
+.jq-checkbox.checked.red {
+  background: red;
+}
+.jq-checkbox.checked.pink {
+  background: pink;
+}
+.jq-checkbox.checked.yellow {
+  background: yellow;
+}
+.jq-checkbox.checked.blue {
+  background: blue;
+}
+.jq-checkbox.checked.green {
+  background: green;
+}
+.jq-checkbox.checked.grey {
+  background: grey;
+}
+.jq-checkbox.checked.powder {
+  background: #f78265;
+}
+.jq-checkbox.checked.teal {
+  background: teal;
+}
+.jq-checkbox.checked.skyblue {
+  background: skyblue;
+}
+.jq-checkbox.checked.purple {
+  background: purple;
+}
 .jq-checkbox.checked .jq-checkbox__div {
   border-bottom: 2px solid #fff;
   border-left: 2px solid #fff;
+}
+.jq-checkbox.checked.white .jq-checkbox__div {
+  border-bottom: 2px solid #2f2035;
+  border-left: 2px solid #2f2035;
 }
 .jq-radio.checked .jq-radio__div {
   background: transparent;
@@ -814,15 +898,117 @@ li.slick-active button {
 }
 .aside-filter__item-list {
   display: flex;
-  justify-content: space-between;
-  margin: 40px 0;
+  margin: 30px 0;
   border-bottom: 2px solid #c4c4c4;
 }
 .filter__item-list {
+  padding-left: 26px;
+  width: 50%;
   font-size: 16px;
   line-height: 19px;
   font-weight: 600;
   padding-bottom: 15px;
+}
+.jq-selectbox {
+  width: 50%;
+}
+.jq-selectbox li {
+  color: var(--txt-main);
+}
+.jq-selectbox li:hover {
+  background-color: var(--c-blue);
+}
+.jq-selectbox__select {
+  top: -5px;
+  height: 20px;
+  padding: 0px 35px 0 10px;
+  border: none;
+  border-bottom-color: transparent;
+  border-radius: 3px;
+  background: none;
+  box-shadow: none;
+  font: 14px/32px "SFProDisplay-Regular", sans-serif;
+}
+.jq-selectbox__select:hover {
+  background: none;
+}
+.jq-selectbox.focused .jq-selectbox__select {
+  border: none;
+}
+.jq-selectbox__select:active {
+  box-shadow: none;
+}
+.filter-more {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--c-blue);
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.filter-search {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 0 20px;
+  height: 30px;
+  margin-top: 10px;
+}
+.filter-search::placeholder {
+  color: #c4c4c4;
+}
+.action .aside-filter__content-multybox {
+  position: relative;
+}
+.action span {
+  position: absolute;
+  top: 4px;
+  left: 24%;
+  transform: translateX(-40%);
+  color: #575757;
+}
+.action .jq-checkbox.checked ~ span {
+  color: #ffffff;
+}
+.action .jq-checkbox {
+  background: #f0f0f4;
+  width: 50px;
+  height: 25px;
+}
+.action .jq-checkbox.checked {
+  background: var(--c-blue);
+}
+.action .jq-checkbox.checked .jq-checkbox__div {
+  display: none;
+}
+.aside-filter__item-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.filter-btn__send {
+  padding: 15px 85px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #575757;
+  cursor: pointer;
+}
+.filter-btn__send--active {
+  color: #fff;
+  background: var(--c-blue);
+  border: none;
+}
+.filter-btn__reset {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 30px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #8b8b8b;
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {

@@ -18,7 +18,7 @@
 
 <body>
 
-  <header class="header page-section">
+  <header class="header">
     <!-- Верхній хедер -->
     <div class="header__top">
       <div class="container">
@@ -122,44 +122,51 @@
           <button>до 3000</button>
           <button>X-Woyz</button>
         </div>
-        <div class="catalog__filter-btn">
-          <select class="filter-style">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+        <div class="catalog__filter-select">
+          <select class="filter-style select-item">
+            <option>По популярности</option>
+            <option>По цене</option>
+            <option>По ...</option>
           </select>
-          <button class="catalog__filter-btngrid">
-            <svg width="20" height="20" viewBox="0 0 52 52" data-name="Layer 1" id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M14,16H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2V14A2,2,0,0,1,14,16ZM4,12h8V4H4Z" />
-              <path d="M14,34H2a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H14a2,2,0,0,1,2,2V32A2,2,0,0,1,14,34ZM4,30h8V22H4Z" />
-              <path d="M14,52H2a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H14a2,2,0,0,1,2,2V50A2,2,0,0,1,14,52ZM4,48h8V40H4Z" />
-              <path d="M32,16H20a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V14A2,2,0,0,1,32,16ZM22,12h8V4H22Z" />
-              <path d="M32,34H20a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V32A2,2,0,0,1,32,34ZM22,30h8V22H22Z" />
-              <path d="M32,52H20a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V50A2,2,0,0,1,32,52ZM22,48h8V40H22Z" />
-              <path d="M50,16H38a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V14A2,2,0,0,1,50,16ZM40,12h8V4H40Z" />
-              <path d="M50,34H38a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V32A2,2,0,0,1,50,34ZM40,30h8V22H40Z" />
-              <path d="M50,52H38a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V50A2,2,0,0,1,50,52ZM40,48h8V40H40Z" />
-            </svg>
-          </button>
-          <button class="catalog__filter-btnline">
-            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
-              <g>
-                <path d="M109.773,105.325H7.712V0h102.061V105.325z M28.346,84.691h60.793V20.634H28.346V84.691z" />
-                <rect x="165.277" y="38.522" width="317.011" height="20.634" />
+          <div class="catalog__filter-btn">
+            <button class="catalog__filter-btn-grid active">
+              <svg width="22" height="20" viewBox="0 0 52 52" data-name="Layer 1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M14,16H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2V14A2,2,0,0,1,14,16ZM4,12h8V4H4Z" />
+                <path d="M14,34H2a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H14a2,2,0,0,1,2,2V32A2,2,0,0,1,14,34ZM4,30h8V22H4Z" />
+                <path d="M14,52H2a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H14a2,2,0,0,1,2,2V50A2,2,0,0,1,14,52ZM4,48h8V40H4Z" />
+                <path d="M32,16H20a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V14A2,2,0,0,1,32,16ZM22,12h8V4H22Z" />
                 <path
-                  d="M109.773,297.662H7.712V192.333h102.061V297.662z M28.346,277.028h60.793v-64.061H28.346V277.028z" />
-                <rect x="165.277" y="230.859" width="317.011" height="20.634" />
-                <path d="M109.773,490H7.712V384.67h102.061V490z M28.346,469.366h60.793v-64.063H28.346V469.366z" />
-                <rect x="165.277" y="423.197" width="317.011" height="20.634" />
-              </g>
-            </svg>
+                  d="M32,34H20a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V32A2,2,0,0,1,32,34ZM22,30h8V22H22Z" />
+                <path
+                  d="M32,52H20a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H32a2,2,0,0,1,2,2V50A2,2,0,0,1,32,52ZM22,48h8V40H22Z" />
+                <path d="M50,16H38a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V14A2,2,0,0,1,50,16ZM40,12h8V4H40Z" />
+                <path
+                  d="M50,34H38a2,2,0,0,1-2-2V20a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V32A2,2,0,0,1,50,34ZM40,30h8V22H40Z" />
+                <path
+                  d="M50,52H38a2,2,0,0,1-2-2V38a2,2,0,0,1,2-2H50a2,2,0,0,1,2,2V50A2,2,0,0,1,50,52ZM40,48h8V40H40Z" />
+              </svg>
+            </button>
+            <button class="catalog__filter-btn-line">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                <g>
+                  <path d="M109.773,105.325H7.712V0h102.061V105.325z M28.346,84.691h60.793V20.634H28.346V84.691z" />
+                  <rect x="165.277" y="38.522" width="317.011" height="20.634" />
+                  <path
+                    d="M109.773,297.662H7.712V192.333h102.061V297.662z M28.346,277.028h60.793v-64.061H28.346V277.028z" />
+                  <rect x="165.277" y="230.859" width="317.011" height="20.634" />
+                  <path d="M109.773,490H7.712V384.67h102.061V490z M28.346,469.366h60.793v-64.063H28.346V469.366z" />
+                  <rect x="165.277" y="423.197" width="317.011" height="20.634" />
+                </g>
+              </svg>
 
-          </button>
+            </button>
+          </div>
         </div>
       </div>
       <div class="catalog__inner">
+        <!-- Боковий фільтр -->
         <aside class="catalog__inner-aside aside-filter">
           <div class="tabs-wrapper">
             <div class="tabs aside-filter__tabs">
@@ -170,6 +177,12 @@
               <div class="tab-content aside-filter__tab-content tab-content-active">
                 <form action="" class="aside-filter__form">
                   <ul class="aside-filter__list">
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title filter__item-drop">Поиск товара</p>
+                      <div class="aside-filter__content">
+                        <input class="filter-search" type="text" placeholder="Введите название или код товара">
+                      </div>
+                    </li>
                     <li class="aside-filter__item-drop">
                       <p class="aside-filter__item-title filter__item-drop">Наличие</p>
                       <div class="aside-filter__content">
@@ -189,13 +202,7 @@
                     </li>
                     <li class="aside-filter__item-drop">
                       <p class="aside-filter__item-title filter__item-drop">Новинки</p>
-                      <div class="aside-filter__content">
-                        <div class="aside-filter__content-box">
-                          <label>
-                            <input name="radio" type="radio" class="filter-style">
-                            Все
-                          </label>
-                        </div>
+                      <div class="aside-filter__content-radio">
                         <div class="aside-filter__content-box">
                           <label>
                             <input name="radio" type="radio" class="filter-style">
@@ -206,6 +213,12 @@
                           <label>
                             <input name="radio" type="radio" class="filter-style">
                             Акции
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-box">
+                          <label>
+                            <input name="radio" type="radio" class="filter-style">
+                            Все
                           </label>
                         </div>
                       </div>
@@ -219,17 +232,175 @@
                     </li>
                     <div class="aside-filter__item-list">
                       <p class="filter__item-list">
-                        Утелитель
+                        Цвет
                       </p>
                       <select class="filter-style">
-                        <option value="">Биопух(синтепух)</option>
-                        <option value="">Тинсулейт</option>
-                        <option value="">Холофайбер</option>
-                        <option value="">Силикон</option>
-                        <option value="">Синтипон</option>
+                        <option value="">Красный</option>
+                        <option value="">Черный</option>
+                        <option value="">Белый</option>
+                        <option value="">Желтый</option>
+                        <option value="">Зеленый</option>
+                        <option value="">Синий</option>
+                        <option value="">Серый</option>
                       </select>
                     </div>
+                    <div class="aside-filter__item-list">
+                      <p class="filter__item-list">
+                        Сезон
+                      </p>
+                      <select class="filter-style">
+                        <option value="">Зима</option>
+                        <option value="">Весна/Осень</option>
+                        <option value="">Лето</option>
+                      </select>
+                    </div>
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title filter__item-drop">Бренд</p>
+                      <div class="aside-filter__content">
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            X-Woyz
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            Mangelo
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            Nui Very
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            Китай
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            Турция
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            Украина
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title filter__item-drop">Цвет</p>
+                      <div class="aside-filter__content">
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style white">
+                            Белый
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style black">
+                            Черный
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style red">
+                            Красный
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style pink">
+                            Розовый
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style yellow">
+                            Желтый
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style blue">
+                            Синий
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox more-content">
+                          <label>
+                            <input type="checkbox" class="filter-style green">
+                            Зеленый
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox more-content">
+                          <label>
+                            <input type="checkbox" class="filter-style grey">
+                            Серый
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox more-content">
+                          <label>
+                            <input type="checkbox" class="filter-style powder">
+                            Пудра
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox more-content">
+                          <label>
+                            <input type="checkbox" class="filter-style teal">
+                            Бирюза
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox more-content">
+                          <label>
+                            <input type="checkbox" class="filter-style skyblue">
+                            Голубой
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox more-content">
+                          <label>
+                            <input type="checkbox" class="filter-style purple">
+                            Фиолет
+                          </label>
+                        </div>
+                        <a class="filter-more">Показать еще</a>
+                      </div>
+                    </li>
+                    <li class="aside-filter__item-drop action">
+                      <p class="aside-filter__item-title filter__item-drop">Акции</p>
+                      <div class="aside-filter__content">
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            <span>NEW</span>
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            <span>HIT</span>
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-multybox">
+                          <label>
+                            <input type="checkbox" class="filter-style">
+                            <span>SALE</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
+                  <div class="aside-filter__item-btn">
+                    <button class="filter-btn__send filter-btn__send--active">ПРИМЕНИТЬ</button>
+                    <button class="filter-btn__reset filter-btn__reset--active">Сбросить фильтр</button>
+                  </div>
                 </form>
               </div>
               <div class="tab-content aside-filter__tab-content">2
@@ -237,6 +408,7 @@
             </div>
           </div>
         </aside>
+        <!-- Блок з карточками товару -->
         <div class="catalog__inner-list">
           <div class="product-item__wrapper">
             <button class="product-item__favorite"></button>
