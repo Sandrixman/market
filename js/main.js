@@ -65,4 +65,15 @@ $(function () {
         $('.product-item__wrapper').addClass('line');
     });
 
+    // Плагін - зірковий рейтинг зі змішуванням кольорів
+    $("#rateYo").rateYo({
+        spacing: "5px",
+        starWidth: "20px", //розмір зірок
+        normalFill: "#c4c4c4", // колір неактивних зірок
+        multiColor: {
+            "startColor": "#FF0000", //RED
+            "endColor": "#1c62cd"  //BLUE
+        }
+    });
+
 });

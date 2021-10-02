@@ -18,59 +18,59 @@
 
 <body>
 
-  <header class="header page-section">
+  <header class="header>
     <!-- Верхній хедер -->
-    <div class="header__top">
-      <div class="container">
-        <div class="header__top-inner">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="#">
-                  Новинки
-                </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">
-                  Акции
-                </a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">
-                  Консультация
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="logo">
-            <p>MamaNova</p>
-          </a>
-          <div class="top-box">
-            <div class="top-box__adress">
-              Хмельницкий, ул. Геологов
-            </div>
-            <ul class="top-box__user">
-              <li class="top-box__user-item">
-                <a class="top-box__user-link" href="#">
-                  <img class="top-box__user-image" src="images/heart.svg" alt="icon">
-                </a>
-              </li>
-              <li class="top-box__user-item">
-                <a class="top-box__user-link" href="#">
-                  <img class="top-box__user-image" src="images/user.svg" alt="icon">
-                </a>
-              </li>
-              <li class="top-box__user-item">
-                <a class="top-box__user-link cart" href="#">
-                  <img class="top-box__user-image" src="images/cart.svg" alt="icon">
-                  <p class="cart__num">1</p>
-                </a>
-              </li>
-            </ul>
+    <div class=" header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Новинки
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Акции
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Консультация
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="logo">
+          <p>MamaNova</p>
+        </a>
+        <div class="top-box">
+          <div class="top-box__adress">
+            Хмельницкий, ул. Геологов
           </div>
+          <ul class="top-box__user">
+            <li class="top-box__user-item">
+              <a class="top-box__user-link" href="#">
+                <img class="top-box__user-image" src="images/heart.svg" alt="icon">
+              </a>
+            </li>
+            <li class="top-box__user-item">
+              <a class="top-box__user-link" href="#">
+                <img class="top-box__user-image" src="images/user.svg" alt="icon">
+              </a>
+            </li>
+            <li class="top-box__user-item">
+              <a class="top-box__user-link cart" href="#">
+                <img class="top-box__user-image" src="images/cart.svg" alt="icon">
+                <p class="cart__num">1</p>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
     </div>
     <!-- навігаційний хедер -->
     <div class="header__bottom">
@@ -112,6 +112,83 @@
       </ul>
     </div>
   </div>
+
+  <!-- Картка товару -->
+  <section class="product-card page-section">
+    <div class="container">
+      <div class="product-card__inner">
+        <div class="product-card__img-box product-item--sale">
+          <img class="product-card__img" src="./images/content/item-2.png" alt="">
+          <p class="product-card__price-old">
+            2000 грн
+          </p>
+          <p class="product-card__price-new">
+            1500 грн
+          </p>
+          <a class="product-card__link" href="">Нашли дешевле? Снизим цену!</a>
+        </div>
+        <div class="product-card__content">
+          <h1 class="product-card__title">
+            Зимняя куртка "TOP"
+          </h1>
+          <p class="product-card__code">
+            Код товара: 3123156
+          </p>
+          <div class="product-card__buttons">
+            <a class="product-card__icon-favorite" href="#">
+              <img src="./images/heart.svg" alt="">
+            </a>
+            <a class="product-card__icon-chart" href="#">
+              <img src="./images/bar-chart.svg" alt="">
+            </a>
+            <a href="#">
+              <div id="rateYo" data-rateyo-rating="5"></div>
+            </a>
+          </div>
+          <div class="tabs-wrapper product-card__tabs">
+            <div class="tabs">
+              <a class="tab product-card__tab tab-active" href="#product-card-1"><span>Характеристики</span>
+              </a>
+              <a class="tab product-card__tab" href="#product-card-2"><span>Наличие в магазине</span>
+              </a>
+            </div>
+            <div class="tabs-container">
+              <div id="product-card-1" class="tab-content product-card__content tab-content-active">
+                <ul class="product-card__list">
+                  <li class="product-card__item">
+                    <div class="product-card__left">Бренд</div>
+                    <div class="product-card__right">X-Woyz</div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__left">Страна</div>
+                    <div class="product-card__right">Украина</div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__left">Размер</div>
+                    <div class="product-card__right">140</div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__left">Цвет</div>
+                    <div class="product-card__right">Пудра</div>
+                  </li>
+                  <li class="product-card__item">
+                    <div class="product-card__left">Сезон</div>
+                    <div class="product-card__right">Зима</div>
+                  </li>
+                </ul>
+                <a class="product-card__more" href="#">Показать еще</a>
+              </div>
+              <div id="product-card-2" class="tab-content product-card__tab">
+                Content-2
+              </div>
+            </div>
+            <div class="product-card__btn-buy">
+              <button>Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
   <!-- Футер -->
   <footer class="footer">
@@ -180,9 +257,12 @@
 <!-- Шаблон табів -->
 <!-- <div class="tabs-wrapper">
   <div class="tabs">
+    <a class="tab tab-active" href="#"></a>
     <a class="tab" href="#"></a>
   </div>
   <div class="tabs-container">
+    <div class="tab-content tab-content-active">
+    </div>
     <div class="tab-content">
     </div>
   </div>
