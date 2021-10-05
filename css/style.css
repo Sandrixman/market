@@ -428,12 +428,10 @@ li.slick-active button {
 .products-slider .slick-dots .slick-active button {
   background: var(--c-blue);
 }
-.catalog__inner-list .product-item__wrapper {
-  margin-bottom: 30px;
-}
 .product-item__wrapper {
+  display: inline-grid;
   position: relative;
-  width: 273px;
+  width: 256px;
   height: 345px;
   margin: 0 10px;
   transition: all 0.3s;
@@ -447,7 +445,7 @@ li.slick-active button {
   color: var(--c-blue);
 }
 .product-item__wrapper.line {
-  width: 100%;
+  width: 98%;
 }
 .product-item__favorite {
   position: absolute;
@@ -546,9 +544,6 @@ li.slick-active button {
 }
 .product-item__notify-link span {
   border-bottom: 1px solid var(--c-blue);
-}
-.product-item__wrapper.product-item__not-available .product-item__title {
-  height: 70px;
 }
 .product-item__wrapper.product-item__not-available .product-item__notify-text {
   display: block;
@@ -747,10 +742,15 @@ li.slick-active button {
 .catalog__inner {
   display: flex;
 }
+.menu-filter__btn {
+  display: none;
+}
 .catalog__inner-aside {
   min-width: 280px;
-  max-width: 280px;
   margin-right: 10px;
+}
+.catalog__inner-list .product-item__wrapper {
+  margin: 0 0 25px 20px;
 }
 .pagination {
   width: 100%;
@@ -774,6 +774,7 @@ li.slick-active button {
 
 .aside-filter__tabs {
   display: flex;
+  justify-content: space-between;
 }
 .aside-filter__tab {
   text-transform: uppercase;
@@ -782,7 +783,7 @@ li.slick-active button {
   font-weight: normal;
   letter-spacing: 0.09em;
   color: #c4c4c4;
-  width: 50%;
+  width: 45%;
 }
 .aside-filter__tab.tab-active {
   font-weight: bold;
