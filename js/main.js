@@ -59,7 +59,7 @@ $(function () {
         // .siblings() - звернення до сусідів
         $($(this).siblings()).removeClass('tab-active');
         // .parent().siblings().find('div') - піднімається до батьківського блоку, далі у сусідів шукає дівки
-        $($(this).parents('.products__tabs').siblings().find('div')).removeClass('tab-content-active');
+        $($(this).parents('.tabs').siblings().find('div')).removeClass('tab-content-active');
 
         $(this).addClass('tab-active');
         $($(this).attr('href')).addClass('tab-content-active');
@@ -83,6 +83,11 @@ $(function () {
     // Мобільна версія футера
     $('.mobile-styler').on('click', function () {
         $(this).toggleClass('filter__item-drop');
+        $(this).next().slideToggle();
+    });
+    // Вілкривання фільтру - Мобільна версія
+    $('.menu-filter__btn').on('click', function () {
+        $(this).toggleClass('filter-active');
         $(this).next().slideToggle();
     });
 
@@ -121,7 +126,7 @@ $(function () {
         }
     });
 
-    // Мобільний гамбуогер
+    // Мобільний гамбургер
     $('.menu__btn').on('click', function () {
         $('.mobile-menu__hamburger').toggleClass('hamburger-active');
     });
