@@ -428,6 +428,9 @@ li.slick-active button {
 .products-slider .slick-dots .slick-active button {
   background: var(--c-blue);
 }
+.catalog__inner-list .product-item__wrapper {
+  margin-bottom: 30px;
+}
 .product-item__wrapper {
   position: relative;
   width: 273px;
@@ -748,9 +751,6 @@ li.slick-active button {
   min-width: 280px;
   max-width: 280px;
   margin-right: 10px;
-}
-.catalog__inner-list .product-item__wrapper {
-  margin-bottom: 30px;
 }
 .pagination {
   width: 100%;
