@@ -416,7 +416,6 @@ li.slick-active button {
 }
 
 .products-slider {
-  display: flex;
 }
 .products-slider .slick-dots {
   position: absolute;
@@ -434,7 +433,6 @@ li.slick-active button {
   width: 256px;
   height: 345px;
   margin: 0 10px;
-  transition: all 0.3s;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   padding: 50px 20px 30px;

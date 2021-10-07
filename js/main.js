@@ -65,7 +65,7 @@ $(function () {
         $($(this).attr('href')).addClass('tab-content-active');
 
         // Ініціалізатор слайдера при перимиканні табів
-        // $('.products-slider').slick('setPosition');
+        $('.products-slider').slick('setPosition');
     });
 
     // перемикач активності улюбленого товару
