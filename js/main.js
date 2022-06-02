@@ -2,8 +2,8 @@ $(function () {
     // Слайдер головних банерів
     $('.banner-section__slider').slick({
         dots: true,
-        prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="/images/left-arrow.svg"     alt=""></button> ',
-        nextArrow: `<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="/images/right-arrow.svg" alt="" ></button> `,
+        prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="./img/left-arrow.svg"     alt=""></button> ',
+        nextArrow: `<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="./img/right-arrow.svg" alt="" ></button> `,
         responsive: [
             {
                 breakpoint: 993,
@@ -19,8 +19,8 @@ $(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: true,
-        prevArrow: '<button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="/images/left-arrow.svg"     alt=""></button> ',
-        nextArrow: `<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="/images/right-arrow.svg" alt="" ></button> `,
+        prevArrow: '<button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="./img/left-arrow.svg"     alt=""></button> ',
+        nextArrow: `<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="./img/right-arrow.svg" alt="" ></button> `,
         responsive: [
             {
                 breakpoint: 993,

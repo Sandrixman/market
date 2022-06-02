@@ -92,7 +92,7 @@ body {
 .top-box__phone::before {
   content: "";
   position: absolute;
-  background-image: url("../images/smartphone-call.svg");
+  background-image: url("../img/smartphone-call.svg");
   background-repeat: no-repeat;
   width: 30px;
   height: 35px;
@@ -162,7 +162,7 @@ body {
   width: 20px;
   height: 20px;
   content: "";
-  background-image: url(../images/loupe.svg);
+  background-image: url(../img/loupe.svg);
   background-repeat: no-repeat;
 }
 .bottom-box__user {
@@ -462,11 +462,11 @@ li.slick-active button {
   left: 0;
   width: 25px;
   height: 25px;
-  background-image: url("../images/heart.svg");
+  background-image: url("../img/heart.svg");
 }
 .favorite-active {
   background-size: cover;
-  background-image: url("../images/heart-blue.svg");
+  background-image: url("../img/heart-blue.svg");
 }
 .product-item__cart {
   padding: 5px 10px;
@@ -673,7 +673,7 @@ li.slick-active button {
   width: 14px;
   height: 15px;
   background-size: 20px;
-  background-image: url("../images/grey-right-arrow.svg");
+  background-image: url("../img/grey-right-arrow.svg");
   opacity: 0.5;
 }
 .breadrumps__list-item:last-child::after {
@@ -806,7 +806,7 @@ li.slick-active button {
 .aside-filter__item-title::before {
   content: "";
   position: absolute;
-  background-image: url("../images/up-arrow.svg");
+  background-image: url("../img/up-arrow.svg");
   left: 0;
   bottom: 2px;
   width: 15px;

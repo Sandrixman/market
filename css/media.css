@@ -108,7 +108,7 @@
   .search-form__button::after {
     width: 18px;
     height: 18px;
-    background-image: url(../images/loupe-black.svg);
+    background-image: url(../img/loupe-black.svg);
     background-size: cover;
   }
   .search-form__button::after {
@@ -504,7 +504,7 @@
   .menu-filter__btn::before {
     content: "";
     position: absolute;
-    background-image: url("../images/up-arrow-white.svg");
+    background-image: url("../img/up-arrow-white.svg");
     right: 15px;
     bottom: 15px;
     width: 18px;
@@ -516,7 +516,7 @@
   .menu-filter__btn::after {
     content: "";
     position: absolute;
-    background-image: url("../images/up-arrow-white.svg");
+    background-image: url("../img/up-arrow-white.svg");
     left: 15px;
     bottom: 15px;
     width: 18px;
@@ -634,7 +634,7 @@
   .mobile-styler::before {
     content: "";
     position: absolute;
-    background-image: url("../images/up-arrow.svg");
+    background-image: url("../img/up-arrow.svg");
     right: 15px;
     bottom: 15px;
     width: 18px;
